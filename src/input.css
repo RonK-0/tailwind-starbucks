@@ -77,7 +77,7 @@
         @apply transform translate-y-[-5px] rotate-[-225deg] transition-all;
     }
 
-    .cards__wrapper .card:nth-child(even) div:last-child{
+    .cards__wrapper .card:nth-child(even) *:last-child{
         @apply md:-order-1;
     }
     .cards__wrapper .card{
