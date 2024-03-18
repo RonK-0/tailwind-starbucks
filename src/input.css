@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    @apply max-w-[90rem] p-6 w-full mx-auto;
+}
+
+@layer components{
+    .header{
+        @apply bg-light shadow-md relative;
+    }
+    .branding img{
+        @apply w-[3rem];
+    }
+    .branding .header__navd{
+        @apply hidden;
+    }
+
+    .header__action{
+        @apply bg-pink-400 absolute top-[6.1rem] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all;
+    }
+    .header__action.open{
+        @apply bg-pink-400 absolute top-[6.1rem] right-0 w-[80%] h-[90vh] px-10 pt-10 overflow-hidden transition-all;
+    }
+    .header__action .header__navm{
+        @apply border-b-gray-400 border-b-[2px] pb-5 flex flex-col gap-5;
+    }
+    .header__action .header__btn{
+        @apply pt-5 flex flex-col gap-5;
+    }
+    .header__action .header__kamote{
+        @apply flex gap-5;
+    }
+    .burger__menu span{
+        @apply w-[1.5rem] h-[0.2rem] bg-gray-700 block rounded-full transition-all;
+    }
+    .burger__menu span:nth-child(2){
+        @apply my-1;
+    }
+    .header__wrapper{
+        @apply flex items-center justify-between;
+    }
+    .burger__menu.open span:first-child{
+        @apply transform translate-y-[10px] rotate-[225deg] transition-all;
+    }
+    .burger__menu.open span:nth-child(2){
+        @apply opacity-0 transition-all;
+    }
+    .burger__menu.open span:last-child{
+        @apply transform translate-y-[-5px] rotate-[-225deg] transition-all;
+    }
+}
