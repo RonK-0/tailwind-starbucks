@@ -855,8 +855,16 @@ video {
   display: flex;
 }
 
-.max-w-\[1400px\] {
-  max-width: 1400px;
+.grid {
+  display: grid;
+}
+
+.max-w-\[90rem\] {
+  max-width: 90rem;
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {
