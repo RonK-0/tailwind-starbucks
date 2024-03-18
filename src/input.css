@@ -10,6 +10,10 @@
     .header{
         @apply bg-light shadow-md relative;
     }
+    .header__wrapper{
+        @apply flex items-center justify-between;
+    }
+    
     .branding{
         @apply md:flex items-center gap-12;
     }
@@ -36,22 +40,27 @@
         @apply border-b-gray-400 border-b-[2px] pb-5 flex flex-col gap-5
         md:hidden;
     }
-    .header__action .header__navm li:hover a{
-        @apply text-accent;
-    }
     .header__action .header__navm li a{
         @apply font-medium text-xl text-dark;
     }
-    .header__action .header__btn a{
-        @apply flex gap-[1rem] items-center 
-        hover:text-accent;
+    .header__action .header__navm li:hover a{
+        @apply text-accent;
     }
     .header__action .header__btn{
         @apply pt-5 flex flex-col gap-3 
         md:flex-row-reverse;
     }
+    .header__action .header__btn a{
+        @apply flex gap-[1rem] items-center 
+        hover:text-accent;
+    }
     .header__action .header__kamote{
         @apply flex gap-5;
+    }
+        
+
+    .burger__menu{
+        @apply md:hidden;
     }
     .burger__menu span{
         @apply w-[1.5rem] h-[0.2rem] bg-gray-700 block rounded-full transition-all;
@@ -59,14 +68,6 @@
     .burger__menu span:nth-child(2){
         @apply my-1;
     }
-    .header__wrapper{
-        @apply flex items-center justify-between;
-    }
-
-    .burger__menu{
-        @apply md:hidden;
-    }
-
     .burger__menu.open span:first-child{
         @apply transform translate-y-[10px] rotate-[225deg] transition-all;
     }
@@ -77,12 +78,11 @@
         @apply transform translate-y-[-5px] rotate-[-225deg] transition-all;
     }
 
+
     .cards__wrapper .card:nth-child(even) *:last-child{
         @apply md:-order-1;
     }
     .cards__wrapper .card{
-        /* @apply flex flex-col items-center justify-center
-        md:flex-row; */
         @apply grid grid-cols-1 gap-5
         md:grid-cols-2;
     }
@@ -92,7 +92,6 @@
     .card .card__details{
         @apply flex flex-col items-center justify-center gap-8 px-3 py-2 pb-8;
     }
-    
     .card .card__details h3{
         @apply text-center text-3xl font-semibold
         md:text-4xl;
