@@ -10,24 +10,45 @@
     .header{
         @apply bg-light shadow-md relative;
     }
+    .branding{
+        @apply lg:flex items-center gap-12;
+    }
     .branding img{
         @apply w-[3rem];
     }
     .branding .header__navd{
-        @apply hidden;
+        @apply hidden 
+        lg:flex lg:gap-10 ;
+    }
+    .branding .header__navd li a{
+        @apply font-medium text-sm  text-dark 
+        hover:text-accent;
     }
 
     .header__action{
-        @apply bg-pink-400 absolute top-[6.1rem] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all;
+        @apply bg-light absolute top-[6.1rem] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all shadow-md 
+        lg:static lg:h-fit lg:w-fit lg:shadow-none;
     }
     .header__action.open{
-        @apply bg-pink-400 absolute top-[6.1rem] right-0 w-[80%] h-[90vh] px-10 pt-10 overflow-hidden transition-all;
+        @apply w-[80%] h-[90vh] px-10 pt-10 overflow-hidden transition-all;
     }
     .header__action .header__navm{
-        @apply border-b-gray-400 border-b-[2px] pb-5 flex flex-col gap-5;
+        @apply border-b-gray-400 border-b-[2px] pb-5 flex flex-col gap-5
+        lg:hidden;
+    }
+    .header__action .header__navm li:hover a{
+        @apply text-accent;
+    }
+    .header__action .header__navm li a{
+        @apply font-medium text-xl text-dark;
+    }
+    .header__action .header__btn a{
+        @apply flex gap-[1rem] items-center 
+        hover:text-accent;
     }
     .header__action .header__btn{
-        @apply pt-5 flex flex-col gap-5;
+        @apply pt-5 flex flex-col gap-3 
+        lg:flex-row-reverse;
     }
     .header__action .header__kamote{
         @apply flex gap-5;
@@ -41,6 +62,11 @@
     .header__wrapper{
         @apply flex items-center justify-between;
     }
+
+    .burger__menu{
+        @apply lg:hidden;
+    }
+
     .burger__menu.open span:first-child{
         @apply transform translate-y-[10px] rotate-[225deg] transition-all;
     }
@@ -49,5 +75,18 @@
     }
     .burger__menu.open span:last-child{
         @apply transform translate-y-[-5px] rotate-[-225deg] transition-all;
+    }
+}
+
+@layer utilities{
+    .btn{
+        @apply inline-block p-[0.5rem] px-[1rem] rounded-full border-transparent border-[1px] text-sm font-medium
+        hover:scale-[1.1];
+    }
+    .btn.bg--dark{
+        @apply bg-dark text-light;
+    }
+    .btn.bg--light{
+        @apply bg-light text-dark border-[1px] border-dark;
     }
 }
