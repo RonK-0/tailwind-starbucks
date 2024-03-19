@@ -15,6 +15,9 @@
   }
 
 @layer components{
+    body.open{
+        @apply overflow-hidden;
+    }
     .header{
         @apply bg-light shadow-md relative;
     }

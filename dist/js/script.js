@@ -1,8 +1,10 @@
 const burgir = document.querySelector(".burger__menu");
 const headerA = document.querySelector(".header__action");
+const bodih = document.querySelector("body");
 burgir.addEventListener("click", ()=>{
     burgir.classList.toggle("open");
     headerA.classList.toggle("open");
+    bodih.classList.toggle("open");
 });
 
 const links = document.querySelectorAll(".links__item h4");
