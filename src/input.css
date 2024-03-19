@@ -204,7 +204,7 @@
 
     .stars__step{
         @apply grid grid-cols-[50px,_1fr] gap-3 items-center
-        md:grid-cols-1 md:justify-center md:max-w-sm;
+        md:grid-cols-1 md:justify-center md:max-w-xs;
     }
     .stars__step h2{
         @apply text-accent text-xl font-semibold 
@@ -223,7 +223,7 @@
         @apply font-bold text-dark text-base md:text-xl;
     }
     .stars__step__details p{
-        @apply text-gray-600 font-medium text-sm md:text-base;
+        @apply text-gray-600 font-medium text-sm  md:text-base;
     }
     .stars__step__details p a{
         @apply text-accent underline;

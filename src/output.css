@@ -1061,7 +1061,7 @@ video {
 
 @media (min-width: 768px) {
   .stars__step {
-    max-width: 24rem;
+    max-width: 20rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-content: center;
   }
@@ -1710,6 +1710,10 @@ video {
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:gap-20 {
+    gap: 5rem;
   }
 
   .md\:text-left {
