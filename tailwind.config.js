@@ -3,6 +3,10 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage:{
+        starBanner: "url('../dist/img/rewards/xl-hero-desktop_2021.png')",
+        starBannerMobile: "url('../dist/img/rewards/hero-mobile_2021.jpg')"
+      },
       colors:{
         dark: "#2b2b2b",
         light: "#fff",
@@ -15,7 +19,8 @@ module.exports = {
         c5: "#dbe6f2",
         c6: "#d5d0ea",
         c7: "#e99264",
-        c8: "#006241"
+        c8: "#006241",
+        el_verde:"#d4e9e2"
       },
       fontFamily:{
         'boldB':["SoDoSans Bold"]

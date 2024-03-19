@@ -156,22 +156,52 @@
     .footer__socials a i{
         @apply w-7 h-7 bg-dark rounded-full text-white text-lg
         flex justify-center items-center
-        hover:ring-4 hover:ring-gray-300;;
+        hover:ring-4 hover:ring-gray-300;
     }
     .footer__links{
         @apply flex-col md:flex-row;
     }
     .footer__links a{
-        @apply font-medium 
+        @apply font-[450]
         md:px-5 
         hover:underline
         first:pl-0
         md:border-r-[1px] md:border-gray-400 last:border-r-0;
     }
+
+
+    .rBanner{
+        @apply bg-starBannerMobile
+        h-[600px]
+        bg-cover
+        bg-el_verde
+        bg-right-bottom
+        flex
+        text-center
+        md:bg-starBanner
+        md:bg-left
+        md:text-center
+        md:items-center;
+    }
+    
     
 
     .rewardsTop__wrapper h3{
-        @apply font-boldB text-sm;
+        @apply font-boldB text-lg;
+    }
+
+    .rewardsBanner{
+        @apply bg-[url('../dist/img/rewards/hero-mobile_2021.jpg')]
+        bg-cover bg-right-bottom bg-no-repeat
+        bg-[#d4e9e2]
+        md:bg-starBanner
+        md:bg-cover
+        md:bg-left
+        h-[84vh] md:h-[600px]
+        flex items-start md:items-center;
+    }
+    .rewardsBanner__wrapper button:last-of-type{
+        @apply hidden md:block;
     }
 }
 
@@ -188,6 +218,9 @@
     }
     .btn.bg--light{
         @apply bg-light text-dark border-[1px] border-dark;
+    }
+    .btn.bg--transparent-no-border{
+        @apply bg-transparent text-dark;
     }
     .btn.bg--transparent{
         @apply bg-transparent text-dark border-[1px] border-dark;
