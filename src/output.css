@@ -1403,6 +1403,18 @@ body.open {
   max-width: 90rem;
 }
 
+.max-w-\[88rem\] {
+  max-width: 88rem;
+}
+
+.max-w-\[86rem\] {
+  max-width: 86rem;
+}
+
+.max-w-\[87rem\] {
+  max-width: 87rem;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
