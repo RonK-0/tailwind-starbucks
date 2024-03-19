@@ -197,6 +197,9 @@
         h-[65vh] md:h-[85vh]
         flex items-start md:items-center;
     }
+    .rewardsBanner a{
+        @apply hover:no-underline;
+    }
     .rewardsBanner__wrapper button:last-of-type{
         @apply hidden md:block;
     }
@@ -205,6 +208,9 @@
     .stars__step{
         @apply grid grid-cols-[50px,_1fr] gap-3 items-center
         md:grid-cols-1 md:justify-center md:max-w-xs;
+    }
+    .stars a{
+        @apply hover:no-underline;
     }
     .stars__step h2{
         @apply text-accent text-xl font-semibold 

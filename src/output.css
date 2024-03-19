@@ -1042,6 +1042,10 @@ video {
   }
 }
 
+.rewardsBanner a:hover {
+  text-decoration-line: none;
+}
+
 .rewardsBanner__wrapper button:last-of-type {
   display: none;
 }
@@ -1065,6 +1069,10 @@ video {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-content: center;
   }
+}
+
+.stars a:hover {
+  text-decoration-line: none;
 }
 
 .stars__step h2 {
@@ -1696,8 +1704,8 @@ video {
     width: fit-content;
   }
 
-  .md\:max-w-64 {
-    max-width: 16rem;
+  .md\:max-w-\[257px\] {
+    max-width: 257px;
   }
 
   .md\:grid-cols-3 {
@@ -1706,10 +1714,6 @@ video {
 
   .md\:items-start {
     align-items: flex-start;
-  }
-
-  .md\:gap-14 {
-    gap: 3.5rem;
   }
 
   .md\:gap-20 {
@@ -1728,5 +1732,10 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
