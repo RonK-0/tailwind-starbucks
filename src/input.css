@@ -118,15 +118,18 @@
     .links__wrapper{
         /* @apply flex flex-col gap-6; */
         @apply grid grid-cols-1 gap-6
-        lg:grid-cols-6;
+        md:grid-cols-6;
     }
     .links__item h4{
         @apply flex items-center justify-between font-semibold;
     }
+    .links__item h4:hover{
+        @apply cursor-pointer;
+    }
     .links__item h4 i{
-        @apply opacity-100
-        transition-all duration-200  ease-in-out
-        lg:opacity-0;
+        @apply transform transition-all
+        duration-200 ease-in-out
+        md:hidden;
     }
     .links__item h4 i.open {
         @apply transform rotate-180 transition-all;
@@ -135,18 +138,37 @@
         @apply max-h-0 overflow-hidden
         transition-all
         flex flex-col gap-6
-        pt-6
-        lg:max-h-fit lg:overflow-visible;
+        md:max-h-fit md:pt-6;
     }
     .links__item ul.open{
         @apply max-h-fit
+        pt-6
         transition-all;
     }
     .links__item ul li a{
         @apply text-gray-500;
     }
+    .links__item ul li a:hover{
+        @apply text-black;
+    }
 
 
+    .footer__socials a i{
+        @apply w-7 h-7 bg-dark rounded-full text-white text-lg
+        flex justify-center items-center
+        hover:ring-4 hover:ring-gray-300;;
+    }
+    .footer__links{
+        @apply flex-col md:flex-row;
+    }
+    .footer__links a{
+        @apply font-medium 
+        md:px-5 
+        hover:underline
+        first:pl-0
+        md:border-r-[1px] md:border-gray-400 last:border-r-0;
+    }
+    
 
     .rewardsTop__wrapper h3{
         @apply font-boldB text-sm;
