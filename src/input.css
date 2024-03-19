@@ -36,7 +36,6 @@
         @apply font-medium text-sm  text-dark 
         hover:text-accent;
     }
-
     .header__action{
         @apply bg-light absolute top-[6.1rem] right-0 w-0 h-[90vh] px-0 pt-0 overflow-hidden transition-all shadow-md 
         md:static md:h-fit md:w-fit md:shadow-none;
@@ -163,6 +162,7 @@
     }
     .footer__links a{
         @apply font-[450]
+        text-gray-600
         md:px-5 
         hover:underline
         first:pl-0
@@ -170,7 +170,7 @@
     }
 
 
-    .rBanner{
+    /* .rBanner{
         @apply bg-starBannerMobile
         h-[600px]
         bg-cover
@@ -182,27 +182,116 @@
         md:bg-left
         md:text-center
         md:items-center;
-    }
-    
-    
-
+    } */
     .rewardsTop__wrapper h3{
         @apply font-boldB text-lg;
     }
-
     .rewardsBanner{
         @apply bg-[url('../dist/img/rewards/hero-mobile_2021.jpg')]
         bg-cover bg-right-bottom bg-no-repeat
         bg-[#d4e9e2]
         md:bg-starBanner
         md:bg-cover
-        md:bg-left
-        h-[84vh] md:h-[600px]
+        md:bg-center
+        /* h-[84vh] md:h-[600px] */
+        h-[65vh] md:h-[85vh]
         flex items-start md:items-center;
     }
     .rewardsBanner__wrapper button:last-of-type{
         @apply hidden md:block;
     }
+
+
+    .stars__step{
+        @apply grid grid-cols-[50px,_1fr] gap-3 items-center
+        md:grid-cols-1 md:justify-center md:max-w-sm;
+    }
+    .stars__step h2{
+        @apply text-accent text-xl font-semibold 
+        m-0 w-[45px] h-[45px] 
+        border-2 border-accent rounded-full
+        flex justify-center items-center;
+    }
+    .stars__step .star__step__num{
+        @apply mx-auto h-[50px];
+    }
+    .stars__step__details{
+        @apply flex flex-col gap-4
+        md:text-center;
+    }
+    .stars__step__details h3{
+        @apply text-xl font-bold text-gray-700;
+    }
+    .stars__step__details p{
+        @apply text-gray-600 font-medium text-lg
+        md:text-base;
+    }
+    .stars__step__details p a{
+        @apply text-accent underline;
+    }
+
+
+    .coffee{
+        @apply bg-[#f1f8f5];
+    }
+    .coffee__nav{
+        @apply shadow-lg pt-10;
+    }
+    .coffee__nav h4{
+        @apply text-2xl sm:text-3xl font-semibold text-center;
+    }
+    .coffee__nav ul{
+        @apply flex flex-wrap justify-center items-center mt-6;
+    }
+    .coffee__nav ul li{
+        @apply px-4 pb-5
+        border-b-4 border-transparent
+        transform transition-all duration-500;
+    }
+    .coffee__nav ul li.active{
+        @apply border-b-4 border-accent
+        transform transition-all duration-500;
+    }
+    .coffee__nav ul li a{
+        @apply text-base font-semibold md:text-2xl;
+    }
+    .coffee__tab{
+        @apply bg-el_verde relative
+        /* h-[500px]; */  md:h-[250px]
+    }
+    .coffee__item{
+        @apply px-6 py-8
+        text-center
+        hidden
+        w-full max-h-[0rem]
+        opacity-0
+        pb-4 mx-auto
+        md:max-w-[50rem] md:text-left md:left-[33%]
+        transform transition-all;
+    }
+    .coffee__item.active{
+        @apply opacity-100 max-h-fit
+        grid grid-cols-1 gap-12
+        md:grid md:grid-cols-[_2fr,_2fr] 
+        justify-center items-center
+        transform transition-all;
+    }
+    .coffee__item img{
+        @apply h-full;
+    }
+    .coffee__text{
+        @apply flex flex-col gap-4 max-w-[30rem] md:max-w-[23rem]
+        mx-auto md:mx-0
+        text-balance;
+    }
+    .coffee__text h5{
+        @apply text-xl font-semibold text-center
+        md:text-2xl md:text-left;
+    }
+    .coffee__text P{
+        @apply text-center md:text-left font-medium text-gray-600;
+    }
+
 }
 
 @layer utilities{

@@ -12,3 +12,33 @@ links.forEach((link) => {
     link.nextElementSibling.classList.toggle("open");
   });
 });
+
+const starNav = document.querySelectorAll(".coffee__nav__link");
+const starContent = document.querySelectorAll(".coffee__item");
+starNav.forEach((star) => {
+  star.addEventListener("click", () => {
+    // removeActiveStar();
+    starNav.forEach((star) => {
+        star.classList.remove("active");
+      });
+    star.classList.add("active");
+    const activeContent = document.querySelector(`#${star.id}-content`);
+    // removeActiveContent();
+    starContent.forEach((content) => {
+        content.classList.remove("active");
+      });
+    activeContent.classList.add("active");
+  });
+});
+
+function removeActiveStar() {
+  starNav.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
+
+function removeActiveContent() {
+    starContent.forEach((content) => {
+      content.classList.remove("active");
+    });
+}

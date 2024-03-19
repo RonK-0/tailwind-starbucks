@@ -9,16 +9,6 @@
     <!-- <script src="https://kit.fontawesome.com/1e4daca392.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="container bg-red-300">
-            <div class="header__wrapper flex justify-between">
-                <h1>Kamote</h1>
-                <h2>Cue</h2>
-            </div>
-        </div>
-    </header> -->
-
-    <!-- header.header>.container>.header__wrapper>.branding+.header__action -->
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -57,7 +47,7 @@
         </div>
     </header>
 
-    <section class="sub bg-accent">
+    <!-- <section class="sub bg-accent">
             <div class="sub__wrapper flex items-center justify-between max-w-[90rem] mx-auto py-2 px-4">
                 <h3 class="text-light font-bold">STARBUCKS® REWARDS</h3>
                 <a href="" class="btn bg--transparent-alt text-light md:hidden">Join the app</a>
@@ -73,7 +63,7 @@
                 <a href="" class="btn bg--transparent-no-border">Or join online</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- section.rewardsTop.bg-accent>.container>.rewardsTop__wrapper>h3{STARBUCKS REWARDS}+button.btn.btn.bg--transparent-alt{Join the app} -->
     <section class="rewardsTop bg-[#1e3932]">
@@ -90,7 +80,7 @@
         <div class="container">
             <div class="rewardsBanner__wrapper">
                 <div class="rewardsBanner__text flex flex-col w-full gap-4 justify-center items-center min-w-60 md:items-start md:w-fit">
-                    <h2 class="text-3xl font-semibold max-w-52 text-center md:text-left">FREE COFFEE IS A TAP AWAY</h2>
+                    <h2 class="text-3xl font-semibold max-w-52 text-center md:text-left md:text-4xl md:max-w-64">FREE COFFEE IS A TAP AWAY</h2>
                     <p class="text-gray-700 font-medium mb-4">Join now to start earning Rewards.</p>
                     <button class="btn bg--accent block md:hidden">Join the app</button>
                     <button class="btn bg--accent">Join now</button>
@@ -98,6 +88,100 @@
                     <p class="hidden md:block">Or <a href="" class="underline">join in the app</a> for the best experience</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- seciton.stars.py-8>.container>(.stars__text>h2.font-bold.text-2xl{Getting started is easy}+p.text-lg.text-gray-500{Earn Stars and get rewarded in a few easy steps.})+.stars__wrapper.grid.grid-cols-2.gap-2>(.stars__step>(h2.text-bold.text-xl{1}+(.stars__step__details>h3{Create an account}+p{To get started, join now. You can also join in the app to get access to the full range of Starbucks® Rewards benefits.})))+(.stars__step>(h2.text-bold.text-xl{2}+(.stars__step__details>h3{Order and pay how you’d like}+p{Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. Learn how})))+(.stars__step>(h2.text-bold.text-xl{3}+(.stars__step__details>h3{Earn Stars, get Rewards}+p{As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!}))) -->
+    <seciton class="stars">
+        <div class="container flex flex-col justify-center items-center my-16">
+            <div class="stars__text text-center mb-10">
+                <h2 class="font-semibold text-2xl md:text-3xl">Getting started is easy</h2>
+                <p class="text-gray-600 font-medium pt-3">Earn Stars and get rewarded in a few easy steps.</p>
+            </div>
+            <div class="stars__wrapper grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-14">
+                <div class="stars__step">
+                    <div class="star__step__num"><h2 class="text-bold text-xl">1</h2></div>
+                    <div class="stars__step__details hidden md:flex">
+                        <h3>Create an account</h3>
+                        <p>To get started, <a href="#">join now</a>. You can also <a href="#">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+                    </div>
+                    <div class="stars__step__details md:hidden">
+                        <h3>Download the Starbucks® app</h3>
+                        <p><a href="#">Join in the app</a> to get access to the full range of Starbucks® Rewards benefits. You can also <a href="#">join online</a>.</p>
+                    </div>
+                </div>
+                <div class="stars__step">
+                    <div class="star__step__num"><h2 class="text-bold text-xl">2</h2></div>
+                    <div class="stars__step__details">
+                        <h3>Order and pay how you’d like</h3>
+                        <p>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#">Learn how</a></p>
+                    </div>
+                </div>
+                <div class="stars__step">
+                    <div class="star__step__num"><h2 class="text-bold text-xl">3</h2></div>
+                    <div class="stars__step__details">
+                        <h3>Earn Stars, get Rewards</h3>
+                        <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seciton>
+
+
+    <!-- section.coffee>.coffee__wrapper>.coffee_nav>h4{Get your favorites for free}+ul>li*5>a -->
+    <section class="coffee">
+        <div class="coffee__wrapper">
+            <div class="coffee__nav">
+                <h4 class="py-8">Get your favorites for free</h4>
+                <ul class="">
+                    <li id="coffee-1" class="coffee__nav__link active"><a href="javascript:void(0)">25⭐</a></li>
+                    <li id="coffee-2" class="coffee__nav__link"><a href="javascript:void(0)">100⭐</a></li>
+                    <li id="coffee-3" class="coffee__nav__link"><a href="javascript:void(0)">200⭐</a></li>
+                    <li id="coffee-4" class="coffee__nav__link"><a href="javascript:void(0)">300⭐</a></li>
+                    <li id="coffee-5" class="coffee__nav__link"><a href="javascript:void(0)">400⭐</a></li>
+                    <!-- <i class="fas fa-star text-yellow-400"></i> -->
+                </ul>
+            </div>
+            <div class="coffee__tab">
+                <!-- .coffee__item*5>img[src="./img/rewards/25.png"]+.coffee__text>h5{Customize your drink}+p{Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.} -->
+                <div class="coffee__item active" id="coffee-1-content">
+                    <img src="./img/rewards/25.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Customize your drink</h5>
+                        <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+                    </div>
+                </div>
+                <div class="coffee__item" id="coffee-2-content">
+                    <img src="./img/rewards/100.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h5>
+                        <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+                    </div>
+                </div>
+                <div class="coffee__item" id="coffee-3-content">
+                    <img src="./img/rewards/200.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h5>
+                        <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+                    </div>
+                </div>
+                <div class="coffee__item" id="coffee-4-content">
+                    <img src="./img/rewards/300.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Sandwich, protein box or at-home coffee</h5>
+                        <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>
+                    </div>
+                </div>
+                <div class="coffee__item" id="coffee-5-content">
+                    <img src="./img/rewards/400.png" alt="">
+                    <div class="coffee__text">
+                        <h5>Select Starbucks® merchandise</h5>
+                        <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 
