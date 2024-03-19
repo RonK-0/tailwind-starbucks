@@ -6,6 +6,14 @@
     @apply max-w-[90rem] p-6 w-full mx-auto;
 }
 
+@layer base {
+    @font-face {
+      font-family: 'SoDoSans Bold';
+      font-weight: 700;
+      src: url("../dist/fonts/SoDoSans-Bold.woff2") format('woff2');
+    }
+  }
+
 @layer components{
     .header{
         @apply bg-light shadow-md relative;
@@ -101,6 +109,47 @@
     }
     .card .card__details h4{
         @apply text-center text-2xl font-semibold;
+    }
+
+    
+    .links{
+        @apply py-6 border-t-2;
+    }
+    .links__wrapper{
+        /* @apply flex flex-col gap-6; */
+        @apply grid grid-cols-1 gap-6
+        lg:grid-cols-6;
+    }
+    .links__item h4{
+        @apply flex items-center justify-between font-semibold;
+    }
+    .links__item h4 i{
+        @apply opacity-100
+        transition-all duration-200  ease-in-out
+        lg:opacity-0;
+    }
+    .links__item h4 i.open {
+        @apply transform rotate-180 transition-all;
+    }
+    .links__item ul{
+        @apply max-h-0 overflow-hidden
+        transition-all
+        flex flex-col gap-6
+        pt-6
+        lg:max-h-fit lg:overflow-visible;
+    }
+    .links__item ul.open{
+        @apply max-h-fit
+        transition-all;
+    }
+    .links__item ul li a{
+        @apply text-gray-500;
+    }
+
+
+
+    .rewardsTop__wrapper h3{
+        @apply font-boldB text-sm;
     }
 }
 

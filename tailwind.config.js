@@ -16,6 +16,9 @@ module.exports = {
         c6: "#d5d0ea",
         c7: "#e99264",
         c8: "#006241"
+      },
+      fontFamily:{
+        'boldB':["SoDoSans Bold"]
       }
     },
   },
