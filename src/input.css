@@ -91,7 +91,7 @@
     }
     .cards__wrapper .card{
         @apply grid grid-cols-1 gap-5
-        md:grid-cols-2;
+        md:grid-cols-2 md:gap-0;
     }
     .cards__wrapper .card img{
         @apply w-full;
