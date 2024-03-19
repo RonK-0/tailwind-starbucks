@@ -1104,16 +1104,23 @@ video {
 }
 
 .stars__step__details h3 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(43 43 43 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .stars__step__details h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .stars__step__details p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));

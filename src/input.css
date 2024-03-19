@@ -220,11 +220,10 @@
         md:text-center;
     }
     .stars__step__details h3{
-        @apply text-xl font-bold text-gray-700;
+        @apply font-bold text-dark text-base md:text-xl;
     }
     .stars__step__details p{
-        @apply text-gray-600 font-medium text-lg
-        md:text-base;
+        @apply text-gray-600 font-medium text-sm md:text-base;
     }
     .stars__step__details p a{
         @apply text-accent underline;
