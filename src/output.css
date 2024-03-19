@@ -792,7 +792,7 @@ video {
 }
 
 @media (min-width: 768px) {
-  .cards__wrapper .card:nth-child(even) *:last-child {
+  .cards__wrapper .card:nth-child(even) div:last-child {
     order: -1;
   }
 }
@@ -835,13 +835,22 @@ video {
 
 @media (min-width: 768px) {
   .card .card__details h3 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    max-width: 40rem;
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
 .card .card__details p {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card .card__details p {
+    max-width: 36rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .card .card__details h4 {
@@ -1684,6 +1693,11 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

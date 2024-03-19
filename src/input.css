@@ -86,7 +86,7 @@
     }
 
 
-    .cards__wrapper .card:nth-child(even) *:last-child{
+    .cards__wrapper .card:nth-child(even) div:last-child{
         @apply md:-order-1;
     }
     .cards__wrapper .card{
@@ -101,10 +101,10 @@
     }
     .card .card__details h3{
         @apply text-center text-3xl font-semibold
-        md:text-4xl;
+        md:text-6xl md:max-w-[40rem];
     }
     .card .card__details p{
-        @apply text-center;
+        @apply text-center md:max-w-[36rem] md:text-xl;
     }
     .card .card__details h4{
         @apply text-center text-2xl font-semibold;
